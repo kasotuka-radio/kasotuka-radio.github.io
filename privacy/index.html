@@ -8,33 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0B1736;--ink:#1B2233;--sub:#5F6878;--line:#E3E6EC;--bg:#F3F4F7;--card:#fff;--red:#E5161B;--link:#1E5FD6}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EEF1F7;--sub:#A3ACBD;--line:#2A3348;--bg:#0A0F1C;--card:#121A2B;--link:#7FA8F5}}
-:root[data-theme="dark"]{--ink:#EEF1F7;--sub:#A3ACBD;--line:#2A3348;--bg:#0A0F1C;--card:#121A2B;--link:#7FA8F5}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-weight:500;line-height:1.8;font-size:16px}
-a{color:var(--link);word-break:break-all}
-header{background:radial-gradient(120% 90% at 85% 0%,#22407F 0%,var(--navy) 55%,#060C1E 100%);color:#fff;padding:28px 16px 32px}
-.wrap{max-width:760px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;opacity:.9}
-.brand .dot{width:22px;height:22px;border-radius:6px;background:var(--red);display:grid;place-items:center;font-size:12px}
-h1{font-size:28px;font-weight:900;margin:14px 0 4px;line-height:1.3}
-header p{margin:0;opacity:.8;font-size:14px}
-main{padding:20px 16px 48px}
-section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 20px 8px;margin-bottom:16px}
-h2{font-size:19px;font-weight:900;margin:0 0 8px}
-h3{font-size:15px;font-weight:700;margin:16px 0 4px}
-ul{padding-left:1.3em;margin:6px 0 14px}
-p{margin:6px 0 14px}
-.en{border-top:1px dashed var(--line);margin-top:8px;padding-top:12px;color:var(--sub);font-size:14.5px;line-height:1.7}
-.en h3{color:var(--ink)}
-footer{text-align:center;color:var(--sub);font-size:13px;padding:0 16px 32px}
-</style>
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <header><div class="wrap">
-  <div class="brand"><span class="dot">▶</span>仮想通貨ラジオ</div>
+  <a class="brand" href="../"><span class="dot">▶</span>仮想通貨ラジオ</a>
   <h1>プライバシーポリシー</h1>
   <p>Privacy Policy ／ 制定日：2026年11月16日</p>
 </div></header>
@@ -95,7 +73,16 @@ footer{text-align:center;color:var(--sub);font-size:13px;padding:0 16px 32px}
 </section>
 
 <section>
-  <h2>4. このポリシーの変更とお問い合わせ</h2>
+  <h2>4. データの削除</h2>
+  <p>動画投稿用の道具が保存しているのは、運営者自身の動画の ID と、運営者自身のログイン情報だけです。ログイン情報は、許可を取り消すと使えなくなり、運営者のパソコンからも消します。投稿した動画の ID の記録は、動画を削除したときに消します。メールの配信は、メールの中のリンクから止められ、登録したアドレスの削除を希望する場合は YouTube チャンネルからご連絡ください。</p>
+  <div class="en">
+    <h3>Data deletion</h3>
+    <p>The upload tool stores only the IDs of the operator's own videos and the operator's own OAuth token. When access is revoked, the token becomes invalid and is deleted from the operator's PC. Video ID records are deleted when the video is deleted. No data obtained from the YouTube API Services is kept longer than needed, and no data of other users is ever stored. To have a registered email address deleted, please contact us through the YouTube channel.</p>
+  </div>
+</section>
+
+<section>
+  <h2>5. このポリシーの変更とお問い合わせ</h2>
   <p>内容を変えるときは、このページを書き換えてお知らせします。お問い合わせは、YouTube チャンネルからお願いします。</p>
   <div class="en">
     <h3>Changes and contact</h3>
@@ -104,6 +91,6 @@ footer{text-align:center;color:var(--sub);font-size:13px;padding:0 16px 32px}
 </section>
 
 </main>
-<footer>© 2026 仮想通貨ラジオ</footer>
+<footer><a href="../">トップ</a> ・ <a href="../privacy/">プライバシーポリシー</a> ・ <a href="../terms/">利用規約</a><br>© 2026 仮想通貨ラジオ</footer>
 </body>
 </html>
